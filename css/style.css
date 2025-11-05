@@ -1,0 +1,198 @@
+:root {
+    --black: #2d2d2d;
+    --white: #fff;
+    --green: #009379;
+    --red: #ff6250;
+    --pink: #f3afa8;
+    --grey: #f3f3f3;
+    --yellow: #f7d684;
+    --font-family: "Epilogue", sans-serif;
+    --second-family: "Mulish", sans-serif;
+    --third-family: "Caveat", sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 1232px;
+    margin: auto;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ----------- */
+
+
+
+span{
+    color: white;
+    margin: 25px 25px;
+}
+.container span {
+   width: 60%;
+   text-align: center;
+
+}
+
+.container img {
+  margin: 25px;
+    width: 10%;
+ 
+}
+
+.container .btn {
+  background-color: #ff6e5e;
+  color: #fff;
+  border: none;
+  margin: 25px;
+  padding: 6px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 30px;
+  width: 110px;
+  font-weight: 500;
+  align-items:right;
+  transition: 0.2s;
+  
+}
+
+.container .btn:hover {
+  background-color: #e54938;
+}
+
+.logo{
+    margin: 20px;
+    font-size: 25px;
+    font-weight:600
+}
+
+.nav {
+    display: flex;
+    
+}
+.nav ul {
+    display: flex;
+    justify-content:end ;
+    gap: 15px;
+    font-size: 22px;
+    position: absolute;
+   
+  
+}
+
+.branding{
+    max-width: 1232px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 68px;
+    margin-top: 50px;
+}
+
+.brandingLeft{
+    width: 620px;
+    height: 328;
+    background-color: #009379;
+    display: flex;
+    position: relative;
+}
+
+.branding .brandingBtn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.brandingLeft p,h1{
+    display: flex;
+    justify-content:left;
+    align-items: top;
+   
+}
+
+
+.brandingRight{
+     width: 480px;
+    height: 360px;
+    background-color: #b1c9c5;
+}
+
+.brandingRight img{
+     width: 480px;
+    height: 336px;
+    min-width: 320px;
+    max-width: 480px;
+}
+
+.brandingBtn button{
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 24PX;
+    width: 211px;
+    height: 78px;
+    padding: 24px 64px;
+
+}
+
+.logobar img{
+     width: 1280px;
+    height: 130px;
+}
+
+.productCard{
+    max-width: 1232px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 68px;
+    margin-top: 50px;
+    
+
+}
+
+.productCard img{
+   width: 124px;
+   height: 124; 
+}
+
+.productCard .card p{
+width: 300px;
+height: 200;
+
+}
+  
+
+.latestWork.gallaryCard{
+    max-width: 1232px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 68px;
+    position: relative;
+    
+
+}
+
+.latestWork.gallaryCard img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+
+}
