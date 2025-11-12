@@ -1,198 +1,324 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --black: #2d2d2d;
-    --white: #fff;
-    --green: #009379;
-    --red: #ff6250;
-    --pink: #f3afa8;
-    --grey: #f3f3f3;
-    --yellow: #f7d684;
-    --font-family: "Epilogue", sans-serif;
-    --second-family: "Mulish", sans-serif;
-    --third-family: "Caveat", sans-serif;
+	--primary: #b88e2f;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: var(--font-family);
 }
 
-a{
-    text-decoration: none;
-}
-ul,ol{
-    list-style: none;
-}
-
 .container{
-    max-width: 1232px;
+    max-width: 1240px;
     margin: auto;
 }
-
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
-/* ----------- */
 
-
-
-span{
-    color: white;
-    margin: 25px 25px;
-}
-.container span {
-   width: 60%;
-   text-align: center;
-
+ul,ol{
+    list-style: none;
 }
 
-.container img {
-  margin: 25px;
-    width: 10%;
- 
+a{
+    text-decoration: none;
 }
 
-.container .btn {
-  background-color: #ff6e5e;
-  color: #fff;
-  border: none;
-  margin: 25px;
-  padding: 6px 10px;
-  border-radius: 16px;
-  cursor: pointer;
-  font-size: 14px;
-  height: 30px;
-  width: 110px;
-  font-weight: 500;
-  align-items:right;
-  transition: 0.2s;
-  
+/* -------------------------------------------------------------------------- */
+/*                                header start                                */
+
+
+/* header {
+    margin: 35px 0;
+} */
+
+nav{
+    padding: 20px 0;
+   
 }
 
-.container .btn:hover {
-  background-color: #e54938;
+nav .row{
+    justify-content: space-evenly;
 }
 
-.logo{
-    margin: 20px;
-    font-size: 25px;
-    font-weight:600
+nav .quicklinks,
+nav .logo{
+    width: 372px; 
 }
-
-.nav {
+nav #quicklinks{
     display: flex;
+    gap: 5px;
+}
+
+.quicklinks .row{
+    text-justify: right;
+}
+
+menu .quicklinks a{
+    display: flex;
+    gap: 45px;
+}
+
+nav .menu{
+    width: 496px;
     
 }
-.nav ul {
-    display: flex;
-    justify-content:end ;
-    gap: 15px;
-    font-size: 22px;
-    position: absolute;
-   
-  
+
+nav .menu a{
+font-weight: 500;
+font-size: 16px;
+color: #000;
+padding: 20px;   /*actual padding 36+ */
 }
 
-.branding{
-    max-width: 1232px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 68px;
-    margin-top: 50px;
+nav .menu li{
+    display: inline-block;
 }
 
-.brandingLeft{
-    width: 620px;
-    height: 328;
-    background-color: #009379;
-    display: flex;
+
+/* -------------------------------------------------------------------------- */
+
+#banner{
+    background-image: url(../images/3\ banner.png);
+    height: 78vh;
     position: relative;
-}
-
-.branding .brandingBtn{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-}
-
-.brandingLeft p,h1{
-    display: flex;
-    justify-content:left;
-    align-items: top;
-   
-}
-
-
-.brandingRight{
-     width: 480px;
-    height: 360px;
-    background-color: #b1c9c5;
-}
-
-.brandingRight img{
-     width: 480px;
-    height: 336px;
-    min-width: 320px;
-    max-width: 480px;
-}
-
-.brandingBtn button{
-    background-color: #2d2d2d;
-    color: white;
-    font-size: 24PX;
-    width: 211px;
-    height: 78px;
-    padding: 24px 64px;
-
-}
-
-.logobar img{
-     width: 1280px;
-    height: 130px;
-}
-
-.productCard{
-    max-width: 1232px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    gap: 68px;
-    margin-top: 50px;
     
-
 }
 
-.productCard img{
-   width: 124px;
-   height: 124; 
+
+/* banner section css */
+
+.banDesc {
+    border-radius: 56px;
+    width: 643px;
+    height: 443px;
+    background:#fff3e3;;
+    padding: 30px;
+    position: absolute;
+    right: 6%;
+    top: 20%;
 }
 
-.productCard .card p{
-width: 300px;
-height: 200;
 
+
+.banDesc h1{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 52px;
+line-height: 125%;
+color: var(--primary);
 }
-  
 
-.latestWork.gallaryCard{
-    max-width: 1232px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    gap: 68px;
+.banDesc p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 46px;
+}
+.banDesc #btn{
+        padding: 25px 72px;
+    width: 222px;
+    height: 74px;
+    background: var(--primary);
+    display: inline-block;
     position: relative;
     
 
 }
 
-.latestWork.gallaryCard img{
-    width: 300px;
-    height: auto;
-    position: absolute;
+#btn h3{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+}
+
+.banDesc h2{
+font-weight: 600;
+font-size: 16px;
+letter-spacing: 0.19em;
+color: #333;
+}
+
+.banDesc{
+    padding: 60px 40px 37px 50px;
 
 }
+
+.banDesc .btn{
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+
+/* range section css */
+
+#range h2{
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+#range p{
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #666;
+}
+
+.rangeImg{
+    margin: 50px 0px;
+    text-align: center;
+    display: inline-block;
+    gap: 5px;
+}
+
+.rangeImg img{
+    width: 381px;
+    padding: 0px 10px;
+    text-align: justify;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.rangeImg img:hover{
+    width: 390px;
+    outline: 2px solid blue;
+}
+
+.rangeImg p{
+font-weight: 600;
+font-size: 24px;
+text-align: center;
+color: #333;
+padding-top: 15px;
+
+}
+
+
+
+/* Products starts */
+
+
+
+#Products .row {
+width: 285px;
+display: flex;
+justify-content: center;
+
+
+}
+
+#Products h2{
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: #3a3a3a;
+
+}
+
+.name h3{
+    font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+color: #3a3a3a;
+}
+
+.name p{
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #898989;
+
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price h4{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+color: #3a3a3a;
+
+}
+.price h5{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-decoration: line-through;
+color: #b0b0b0;
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+
+.funiro h2{
+    font-weight: 700;
+font-size: 24px;
+color: #000;
+
+}
+
+
+.funiro p{
+font-weight: 400;
+font-size: 16px;
+color: #9f9f9f;
+padding: 50px 0px;
+}
+.links h2{
+    font-weight: 500;
+font-size: 16px;
+color: #000;
+padding: 25px 0px;
+}
+
+.help h2{
+        font-weight: 500;
+font-size: 16px;
+color: #000;
+padding: 25px 0px;
+}
+
+.newsletter h2{
+    font-weight: 500;
+font-size: 16px;
+color: #9f9f9f;
+}
+
+.subscribe p{
+    font-weight: 500;
+font-size: 14px;
+color: #000;
+}
+
+
+/* -------------------------------------------------------------------------- */
