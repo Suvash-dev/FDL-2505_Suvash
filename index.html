@@ -3,178 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 2nd</title>
+    <title>Bootstrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+   
 <!-- ----------------------------------------------------------------------- -->
-<!--                                 header                                  -->
+<!--                             Header Section                              -->
 <header>
-    <nav>
+            <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                    <a class="navbar-brand" href="#"><img src="./images/1. logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                            </li>               
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Works</a>
+                            </li>                
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                            </li>                
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                
+                </div>
+        </div>
+        </nav>
+</header>
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              Main Section                               -->
+<main>
+    <section id="banner">
         <div class="container">
-            <div class="row">
-
-                <div class="logo"><a href=""><img src="./images/1. Logo.png" alt=""></a></div>
-
-
-                <div class="menu">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h5>Hello, I'm Arif Rahman <img src="./images/3.Wave.png" alt=""></h5>
+                    <h1>UIUX and Graphic Designer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur </p>
+                    <a href="#" class= "btn--primary btn--lg">Lets talk <iconify-icon icon="f7:paperplane" width="25" height="25"></iconify-icon></i></a>
+                    <a href="#" class= "btn--outline btn--lg">Download CV<iconify-icon icon="akar-icons:cloud-download" width="24" height="24"></iconify-icon></a>
                 </div>
-
-
-                <div class="quicklinks">
-                    <div class="row" id="quicklinks">   <!--is it ok?-->
-                        <a href="#"><img src="./images/2. Quiclinks/1. mdi_account-alert-outline.png" alt=""></a>
-                        <a href="#"><img src="./images/2. Quiclinks/2. akar-icons_search.png" alt=""></a>
-                        <a href="#"><img src="./images/2. Quiclinks/3. akar-icons_heart.png" alt=""></a>
-                        <a href="#"><img src="./images/2. Quiclinks/4. Vector.png" alt=""></a>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="./images/2. bannerPic.png" alt="">
+                    <div class="topleft"><input type="text" placeholder="UI Designer"></div>
+                    <div class="topRight">
+                        <iconify-icon icon="mingcute:search-fill" width="24" height="24" class="myIcon"></iconify-icon><span></span><input type="text" placeholder="User Research"></span>
                     </div>
+
                 </div>
+            </div>
+               
+             <div class="row">
+                <div class="col-lg-6" id="follow">
+                    <div class="follow"><h6>Follow me:</h6></div>
 
-
+                        <div class="media-buttons">
+                            <button class="btn" onclick="window.open(`https://web.facebook.com/me/`)" class="request-callback"><i class="fa fa-facebook-official"  style="color: #273ac7;" aria-hidden="true"></i></button>
+                            <button class="btn" onclick="window.open(``)" class="request-callback"><i class="fa fa-instagram"  style="color: #c43023;" aria-hidden="true"></i></button>
+                            <button class="btn" onclick="window.open(`https://www.linkedin.com/in/suvash-chowdhury-b389bb370/`)" class="request-callback"><i class="fa fa-linkedin"  style="color: #c43023;" aria-hidden="true"></i></button>
+                            <button class="btn" onclick="window.open(`https://github.com/Suvash-dev/FDL-2505_Suvash`)" class="request-callback"><i class="fa fa-github"  style="color: #237cc4;" aria-hidden="true"></i></button>
+                        </div>
+                </div>
+                 <div id="mouse">
+                    <a href=""><img src="./images/4.bi_mouse.png" width="43px" height="43px" alt=""></a>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
+    </section>
 
+
+
+<section id="about">
+    <div class="container">
+        <div class="row ">
+        <div class="col-lg-6">
+            <div class="aboutImg">
+                <img src="./images/aboutImg.png" alt="aboutImg">
+            </div>
+        </div>
+
+
+    <div class="col-lg-6">
+        <div class="aboutDesc">
+              <h1>About Me</h1> 
+              <p>With 10 yevvars experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+              <a href="">See More</a> 
+              <div class="half-circle"></div>
+                <div class="line"></div>    
+        </div>
+    </div>
+
+    </div>
+</section>
+        
+    </section>
+
+</main>
 <!-- ----------------------------------------------------------------------- -->
 
-
-
-<!-- ----------------------------------------------------------------------- -->
-<!--                                  main                                   -->
-                                  <section>
-                                    <div id="banner">
-                                        <div class="container">
-                                            <div class="row">
-
-                                                <div class="banDesc">
-                                                            <h2>New Arrival</h2>
-                                                            <h1>Discover Our <br>New Collection</h1>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br> elit tellus, luctus nec ullamcorper mattis.</p>
-                                                            <a href="#" id="btn"><h3>BUY Now</h3></a>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </section>
-
-                                  <section>
-                                    <div class="container" id="range">
-                                        <h2>Browse The Range</h2>
-                                        <a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></a>
-                                        <div class="row">
-                                            <div class="rangeImg">
-                                                <a href="#"><img src="./images/rangeImage/bedroom.png" alt=""></a>
-                                                <a href=""><p><b>Dining</b></p></a>
-                                                </div>
-                                                <div class="rangeImg">
-                                                    <a href="#"><img src="./images/rangeImage/Dinning.png""></a>
-                                                    <a href=""><p><b>Living</b></p></a>
-                                                </div>
-                                                <div class="rangeImg"><a href="#">
-                                                    <img src="./images/rangeImage/Living.png" alt=""></a>
-                                                    <a href=""><p><b>Bedroom</b></p></a>
-                                                </div>
-                                                
-                                                
-                                            
-                                        </div>
-                                    </div>                                  
-                                </section>
-
-
-                                  <section id="Products">
-                                    <div class="container">
-                                        <h2>Our Products</h2>
-                                        
-                                        <div class="row">
-                                            <div class="prodImg">
-                                                <a href="#"><img src="./images/Products/1.png" alt=""></a>
-                                            </div>
-                                            <div class="prodDesc">
-                                                    <div class="name">
-                                                            <a href="">                                                                     <h3>Syltherine</h3>
-                                                            <p>Stylish cafe chair</p>
-                                                            </a>
-                                                    </div>
-                                                    <div class="price">
-                                                        <h4>Rp 2.500.000</h4> <h5>Rp 3.500.000</h5>
-                                                    </div>
-                                            </div>
-
-                                                                                        <div class="prodImg">
-                                                <a href="#"><img src="./images/Products/1.png" alt=""></a>
-                                            </div>
-                                            <div class="prodDesc">
-                                                    <div class="name">
-                                                            <a href="">                                                                     <h3>Syltherine</h3>
-                                                            <p>Stylish cafe chair</p>
-                                                            </a>
-                                                    </div>
-                                                    <div class="price">
-                                                        <h4>Rp 2.500.000</h4> <h5>Rp 3.500.000</h5>
-                                                    </div>
-                                            </div>
-                                            
-                                        </div>
-
-                                    </div>                                  
-                                </section>
-<!-- ----------------------------------------------------------------------- -->
-
-
-
- <!-- ----------------------------------------------------------------------- -->
- <!--                                 footer                                  -->
-                                  <hr>
-                                  <footer id="foot">
-                                    <nav>
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="funiro">
-                                                    <h2>Funiro.</h2>
-                                                    <p>400 University Drive Suite 200 Coral<br> Gables,<br> 33134 USA</p>
-                                                </div>
-                                                <div class="links">
-                                                    <ul>
-                                                        <li><a href="#"><p>Links</p></a></li>
-                                                        <li><a href="#"><h2>Home</h2></a></li>
-                                                        <li><a href="#"><h2>Shop</h2></a></li>
-                                                        <li><a href="#"><h2>About</h2></a></li>
-                                                        <li><a href="#"><h2>Contact</h2></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="help">
-                                                    <ul>
-                                                        <li><a href="#"><p>Help</p></a></li>
-                                                        <li><a href="#"><h2>Payment Options</h2></a></li>
-                                                        <li><a href="#"><h2>Returns</h2></a></li>
-                                                        <li><a href="#"><h2>Privacy Policies</h2></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="newsletter">
-                                                    <ul>
-                                                        <li><a href="#"><h2>Newsletter</h2></a></li>
-                                                        <li><a href="#"><h2 style="padding: 30px 0px;">Enter Your Email Address</h2></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="subscribe"><p style="padding: 50px 0px;">SUBSCRIBE</p></div>
-                                            </div>
-                                            <hr>
-                                            <p style="padding: 50px 0px;">2023 furino. All rights reverved</p>
-                                        </div>
-                                    </nav>
-                                  </footer>
- <!-- ----------------------------------------------------------------------- -->
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </body>
 </html>
+
