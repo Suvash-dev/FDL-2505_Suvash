@@ -1,0 +1,94 @@
+@media (max-width: 991PX){
+
+    #about img.img-fluid{
+        transform: rotateY(180deg);
+    }
+
+#about .container {
+    padding: 10px 40px 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#about h1 {
+    font-size: 39px;
+    margin: 20px 0 15px;
+}
+
+#about p {
+       font-size: 16px;
+}
+.btn-outline.btn--lg {
+    font-size: 16px;
+    padding: 12px 37px;
+    margin-bottom: 20px;
+}
+
+    .timelinewrapper{
+       border-left:2px dashed #7a7a7a;
+       padding: 0 30px;
+       max-width: 90%;
+       margin: auto;
+
+    }
+
+      
+    .timeline .designation{
+    border-right:none;
+    position: relative;
+    padding: 3px 12px 10px;
+}
+
+ .timeline .designation::before{
+    right: auto;
+    left: 0;
+}
+
+.timeline .designation::after{
+    right: auto;
+    left: 0;
+}
+
+#exp h2 {
+    font-size: 30px;
+    margin-bottom: 43px;
+}
+
+#whatDo {
+    margin-bottom: 2px;
+}
+
+.help-section h2 {
+    font-size: 30px;
+}
+
+.timeline .designation p {
+    margin-bottom: 5px;
+}
+
+
+.timeline p {
+    margin-bottom: 20px;
+}
+
+#exp p {
+    margin-top: 2px;
+}
+
+.timeline .designation::before {
+    right: auto;
+    left: -40px;
+}
+
+.timeline .designation::after {
+    right: auto;
+    left: -29px;
+}
+
+#Left_part{
+    margin: 0 0 100px;
+}
+
+}
