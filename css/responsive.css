@@ -4,13 +4,24 @@
         transform: rotateY(180deg);
     }
 
+#banner {
+    padding: 20px;
+}
+.Banner_socialIcon {
+    margin-top: 50px;
+}
+
 #about .container {
     padding: 10px 40px 0px 20px;
     align-items: center;
     position: relative;
 }
 
-
+.gradient-box {
+    border-radius: 5px;
+    margin-bottom: 40px;
+    
+}
 
 #about h1 {
     font-size: 39px;
@@ -75,6 +86,7 @@
 
 #exp p {
     margin-top: 2px;
+    text-align:justify;
 }
 
 .timeline .designation::before {
@@ -91,4 +103,97 @@
     margin: 0 0 100px;
 }
 
+#Left_part p {
+    margin: 25px 0px 25px;
 }
+#Left_part {
+    margin: 0 0 60px;
+}
+.skills_btn a {
+    margin: 0px 0px 30px;
+    
+}
+
+.email-box {
+   border-radius: 10px;
+    
+}
+
+.email-box input {
+    padding: 10px 10px;
+}
+
+.email-box button {
+    padding: 10px;
+    font-size: 10px;
+}
+
+#Subscribe p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    padding-bottom: 20px;
+   
+}
+
+#Subscribe h1 {
+    font-size: 20px;
+    line-height: 200%;
+    padding: 10px 0 10px 0;
+}
+#Subscribe .row {
+    border-radius: 10px;
+    padding: 50px 0;
+
+}
+
+#footer_last .left_part a img {
+     padding: 25px 20px 20px 0;
+}
+
+.middle_part h1 {
+    font-size: 20px;
+    padding-top: 25px;
+    
+}
+
+.middle_part P {
+    
+    font-size: 14px;
+    line-height: 180%;
+    padding-bottom: 20px;
+    
+}
+
+#feedback h1 {
+    font-size: 30px;    
+    margin-top: 40px;
+}
+
+#blog_post h1 {
+    font-size: 29px;
+   text-align: center;
+    margin: 20px;
+}
+
+#my_service p {
+    font-size: 18px;
+    padding: 13px 0 40px;
+}
+
+.right_part .btn--primary {
+    margin: 30px;
+   
+}
+
+#feedback .row p {
+    
+    padding: 20px 0 24px;
+}
+
+#feedback h6 {
+    margin-bottom: 20px;
+}
+
+}
+

@@ -8,7 +8,9 @@
   --bgGradient: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
  
 }
-
+img{
+    max-width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -146,6 +148,25 @@ padding: 15px 0px 25px;
     
 }
 
+.Banner_socialIcon{
+    margin-top: 83px;
+}
+
+.Banner_socialIcon p{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    color: #353535;
+    text-align: right;
+        
+}
+
+.Banner_socialIcon .col-1{
+    border-radius: 100%;
+    fill: #f4f3f3;
+    display: flex;
+    color: #000;
+}
 
 
 
@@ -255,8 +276,6 @@ margin-bottom: 62px;
     
     height: 473px; /* you can change */
     border-radius: 20px; /* rounded corners */
-    overflow: hidden;
-
     /* Yellow gradient like your picture */
     background: linear-gradient(90deg, #fcc800, #ffd84d);
     margin-bottom: 100px;
@@ -271,6 +290,7 @@ margin-bottom: 62px;
 #brandingId{
     padding: 20px 0 0 20px;
     align-items: center;
+    position: relative;
 }
 
 #branding h1{
@@ -280,6 +300,17 @@ margin-bottom: 62px;
     margin-top: 63PX;
 
 }
+
+/* #whatDo .stat-box h3{
+font-weight: 700;
+font-size: 30px;
+text-align: right;
+color: #353535;
+
+
+} */
+
+
 #branding p{
     font-weight: 400;
     font-size: 18px;
@@ -307,7 +338,7 @@ font-size: 17px;
 line-height: 180%;
 text-align: center;
 color: #353535;
-    padding: 18px 38px;
+padding: 18px 38px;
 }
 
 .branndesc{
@@ -324,8 +355,8 @@ color: #353535;
 
 .triangle{
     position: absolute;
-    right: 700px;
-    top: 2050px;
+    right: 250px;
+    top: -90px;
 }
 
 /* branding ends -------------------------------*/
@@ -335,6 +366,8 @@ color: #353535;
 #whatDo{
     margin-bottom: 100px;
 }
+
+
 .designPart{
     border-radius: 20px;
 width: 380px;
@@ -415,6 +448,7 @@ margin-top: 9px;
 /* whatDo ends -------------------------------*/
 
 /* Works Experiene starts -------------------------------*/
+
 
 #exp h2{
     font-weight: 700;
@@ -565,6 +599,7 @@ margin: 0 72px 60px;
 
 .percent {
     font-weight: bold;
+    
 }
 
 .bar {
@@ -607,7 +642,6 @@ margin: 0 72px 60px;
 /* my_service starts -------------------------------*/
 
 #my_service{
-    width: 1440px;
     background: #fff7d5;
     margin: auto;
 }
@@ -626,7 +660,6 @@ margin: 0 72px 60px;
     line-height: 180%;
     text-align: center;
     color: #7a7a7a;
-    width: 613px;
     text-align: center;
     margin: auto;
     padding: 13px 0 80px;
@@ -636,46 +669,42 @@ margin: 0 72px 60px;
 .serv_card{
     border: 0.10px solid #353535;
     border-radius: 12px;
-    width: 350px;
-    height: 422px;
     box-shadow: 0 4px 10px 0 rgba(76, 74, 74, 0.06);
     background: #fff;
     text-align: center;
+    transition: 0.4s;
+    padding:30px 50px 79px;
     
     
 }
 
-.serv_card.middle{
-    border: 0.10px solid #353535;
-border-radius: 12px;
-width: 372px;
-height: 448px;
-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
-padding: 0 10px;
+
+.serv_card:hover{
+  background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+ 
 }
 
-.serv_card a{
-    width: 88px;
-height: 88px;
+
+
 }
 
-.serv_card h2{
-font-weight: 600;
+.serv_card a h2{
+ font-weight: 600;
 font-size: 24px;
 line-height: 180%;
 text-align: center;
 color: #353535;
+padding: 20px 63px 25px 93px;
     
 }
 .serv_card p{
 font-weight: 400;
-font-size: 15px;
+font-size: 10px;
 line-height: 180%;
 text-align: center;
 color: #7a7a7a;
-text-align: center;
 display: inline;
+padding: 0px 50px 80px;
 
     
 }
@@ -704,7 +733,7 @@ display: inline;
     line-height: 180%;
     color: #7a7a7a;
     padding: 13px 0 63px;
-    width: 700px;
+    max-width: 700px;
 
 }
 
@@ -763,7 +792,7 @@ margin: 90px 0;
 
 .blog_group img{
     border-radius: 20px;
-    width: 260px;
+    /* max-width: 260px; */
     border: 1px solid black;
     margin-bottom: 40px;
     
@@ -834,30 +863,30 @@ color: #353535;
 }
 
 .email-box {
-    width: 350px;
-    display: flex;
+   display: flex;
     border: 3px solid #3fa7ff;
     border-radius: 16px;
     overflow: hidden;
     background: #fff;
-    width: 455px;
-    height: 82px;
+    
+    
     
 }
 
 .email-box input {
     flex: 1;
     border: none;
-    padding: 12px 15px;
+    padding: 25px 225px 25px 25px;
     font-size: 14px;
     outline: none;
+    overflow: hidden;
 }
 
 .email-box button {
     background: #ff6f6f;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 20px;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
@@ -948,6 +977,7 @@ line-height: 180%;
 text-align: justify;
 color: #bbb9b9;
 padding-bottom: 94px;
+
     
 }
 .middle_part h6{
@@ -966,9 +996,7 @@ color: #fff;
     
 }
 
-.right_part{
 
-}
 
 .right_part .social_icon p{
 font-weight: 400;
