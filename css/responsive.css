@@ -195,5 +195,86 @@
     margin-bottom: 20px;
 }
 
+#feedback .row p {
+    font-size: 15px;
+    line-height: 150%%;
+    
+}
+
+#feedback h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn--primary.btn--lg {
+    padding: 8px 15px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.btn-outline {
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+
+#banner p {
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+
+.col-1 {
+    padding-right: 40px;
+}
+
+.Banner_socialIcon {
+    margin-top: 25px;
+}
+#about h1 {
+    font-size: 24px;
+    margin: 16px 0 10px;
+}
+
+#about p {
+    font-size: 14px;
+}
+
+#about p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-outline.btn--lg {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+#works p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 174%;
+    margin-bottom: 39px;
+}
+
+#works a img {
+    width: 45px;
+    margin-top: 32px;
+    
+}
+
+#works h1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 180%;
+    color: #353535;
+    padding: 14px 0;
+    display: inline-block;
+    
+}
+
+
 }
 

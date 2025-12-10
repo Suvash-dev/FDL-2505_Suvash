@@ -274,12 +274,12 @@ margin-bottom: 62px;
 
 .gradient-box{
     
-    height: 473px; /* you can change */
+   /* height: 473px;  you can change */
     border-radius: 20px; /* rounded corners */
     /* Yellow gradient like your picture */
     background: linear-gradient(90deg, #fcc800, #ffd84d);
     margin-bottom: 100px;
-    padding: 0 0;
+    
 }
 
 .socialMediaIcon {
@@ -317,7 +317,7 @@ color: #353535;
     line-height: 190%;
     color: #353535;
     margin: 21PX 0 53PX 0;
-    width: 410px;
+    
 }
 #branding a{
     font-size: 17px;
@@ -370,8 +370,8 @@ padding: 18px 38px;
 
 .designPart{
     border-radius: 20px;
-width: 380px;
-height: 93px;
+/* width: 380px;
+height: 93px; */
 box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
 background: #fff;
 }
@@ -733,7 +733,7 @@ padding: 0px 50px 80px;
     line-height: 180%;
     color: #7a7a7a;
     padding: 13px 0 63px;
-    max-width: 700px;
+    
 
 }
 
