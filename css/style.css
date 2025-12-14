@@ -144,4 +144,42 @@ body::before {
 
 
 
+
+
+@media (max-width:991px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+   .cursor,
+    .cursorSm {
+        display: none;
+    }
+
+
+    nav {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* body {
+        background-size: contain;
+        background-position: left top;
+    } */
+
+
+  
+}
+
+
+
+
+
+
+
+
  
