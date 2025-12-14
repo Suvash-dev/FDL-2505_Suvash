@@ -1,1121 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-  --font-family: "Poppins", sans-serif;
-  --second-family: "PT Sans", sans-serif;
-  --primaryColor:#fc0;
-  --secondaryColor:#353535;
-  --bgGradient: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
- 
-}
-img{
-    max-width: 100%;
-}
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
-
-a{
-    text-decoration: none;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul,ol{
     list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul,ol,span {
-    margin: 0;
-    padding: 0;
+a{
+    text-decoration: none;
 }
 
-body{
-    font-family: var(--font-family);
+.container{
+    max-width: 1170px;
+    margin: auto;
 }
 
-.btn--primary{
-font-weight: 500;
-font-size: 16px;
-line-height: 180%;
-color: #fff;
-display: inline-flex;
-align-items: center;
-border-radius: 12px;
-background: var(--primaryColor);
-padding: 10px 21px;
-gap: 11px;
-}
-
-.btn--primary.btn--lg{
-    padding: 15px 45px;
-    font-size: 20px;
-    margin-right: 35px;
-    
-}
-
-.btn-outline{
-font-weight: 500;
-font-size: 20px;
-line-height: 180%;
-color: #353535;
-border: 1px solid #000;
-border-radius: 20px;
-padding: 16px 18px;
-display: inline-flex;
-align-items: center;
-
-}
-
-.btn-outline.btn--lg{
-font-size: 18px;
-padding: 18px 44px;
-}
-
-
-
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                               Hearder Starts                               */
-
-
-header nav ul li{
-    border-bottom: 0px solid yellow;
-}
-
-header nav ul li:hover{
-    border-bottom: 2px solid black;
-
-}
-
-header #myNavbar ul li a{
-font-weight: 500;
-font-size: 15px;
-line-height: 200%;
-color: #353535;
-margin-bottom: 5px;
-    
-}
-
-/* ----------------------navbar start------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-
-#myNavbar ul li a{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 200%;
-    color: #353535;
-
-    
-}
-/* ---------------------------navbar ends---------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                                Banner Start                                */
-
-#banner{
-    padding: 110px 0px 155px;
-}
-
-#banner h5{
-font-weight: 400;
-font-size: 24px;
-color: #353535;
-
-}
-#banner h1{
-font-weight: 700;
-font-size: 64px;
-color: #353535;
-padding: 15px 0px 25px;
-}
-
-#banner p{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 180%;
-    color: #353535;
-    margin-bottom: 60px;
-    
-}
-
-
-
-.follow-section{
-    display: flex;
-    
-}
-
-.Banner_socialIcon{
-    margin-top: 83px;
-}
-
-.Banner_socialIcon p{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 180%;
-    color: #353535;
-    text-align: right;
-        
-}
-
-.Banner_socialIcon .col-1{
-    border-radius: 100%;
-    fill: #f4f3f3;
-    display: flex;
-    color: #000;
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-/*                                 About Start                                */
-#about{
-    position: relative;
-    background: var(--bgGradient);
-}
-#about .container{
-    padding: 24px 123px 0px 33px;
-    align-items: center;
-    position: relative;
-}
-
-#about .container.eclipse{
-    position: absolute;
-    margin-left: 700px;
-    margin-bottom: 10px;
-}
-
-#about h1{
-font-weight: 700;
-font-size: 50px;
-color: #353535;
-margin: 76px 0 26px;
-
-}
-#about p{
-font-weight: 400;
-font-size: 20px;
-line-height: 190%;
-color: #353535;
-margin-bottom: 62px;
-
-}
-
-
-
-.ele01{
-    width: 160px;
-    position: absolute;
-    bottom: 0;
-    font-size: 100px;
-    left: 80%;
-   
-}
-
-/* works start -------------------------------------------*/
-
-
-#works{
-    margin: 110px 0 110px;
-}
-
-#works .row{
-    text-align: center;
-    
-}
-
-#works .row .col-lg-4{
-    /* border: 2px solid black; */
-    border-radius: 20px;
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
-    background: #fff;
-    margin: 0 15px;
-    
-}
-
-#works a img{
-    width: 78px;
-    margin-top: 32px;
-}
-
-#works h1{
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 180%;
-    text-align: center;
-    color: #353535;
-    padding: 14px 0;
-
-}
-
-#works p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 190%;
-    text-align: center;
-    color: #7a7a7a;
-    margin-bottom: 50px;
-
-}
-
-/* works ends -------------------------------------------*/
-
-
-/* branding start-------------------------------- */
-
-
-
-.gradient-box{
-    
-   /* height: 473px;  you can change */
-    border-radius: 20px; /* rounded corners */
-    /* Yellow gradient like your picture */
-    background: linear-gradient(90deg, #fcc800, #ffd84d);
-    margin-bottom: 100px;
-    
-}
-
-.socialMediaIcon {
-    margin: 50px 0 100px;
-    mar
-}
-
-#brandingId{
-    padding: 20px 0 0 20px;
-    align-items: center;
-    position: relative;
-}
-
-#branding h1{
-    font-weight: 700;
-    font-size: 44px;
-    color: #353535;
-    margin-top: 63PX;
-
-}
-
-/* #whatDo .stat-box h3{
-font-weight: 700;
-font-size: 30px;
-text-align: right;
-color: #353535;
-
-
-} */
-
-
-#branding p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 190%;
-    color: #353535;
-    margin: 21PX 0 53PX 0;
-    
-}
-#branding a{
-    font-size: 17px;
-    line-height: 180%;
-    text-align: center;
-    color: #353535;
-    
-
-}
-
-#branding a img{
-    margin: 0px 0px;
-}
-
-#branding .btn-outline a{
-    font-weight: 500;
-font-size: 17px;
-line-height: 180%;
-text-align: center;
-color: #353535;
-padding: 18px 38px;
-}
-
-.branndesc{
-    position: relative;
-
-}
-
-.arrow{
-    position: absolute;
-    right: 350px;
-    bottom: 30px;
-}
-
-
-.triangle{
-    position: absolute;
-    right: 250px;
-    top: -90px;
-}
-
-/* branding ends -------------------------------*/
-
-/* whatDo starts */
-
-#whatDo{
-    margin-bottom: 100px;
-}
-
-
-.designPart{
-    border-radius: 20px;
-/* width: 380px;
-height: 93px; */
-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
-background: #fff;
-}
-
-#whatDo .col-lg-4{
+.row{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-}
-
-#whatDo .col-lg-4 img{
-    
-    margin: 18px 18px 18px 29px;
-
-}
-
-#whatDo .col-lg-4 h3{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 180%;
-    color: #353535;
-}
-
-#whatDo .col-lg-4 p{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 180%;
-    color: #353535;
-}
-
-.help-section {
-    text-align:right;
-    max-width: 600px;
-    margin: 40px auto;
-    
-}
-
-.help-section h2 {
-    font-weight: 700;
-    font-size: 50px;
-    text-align: right;
-    color: #353535;
-    
-}
-
-.help-section p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 190%;
-    text-align: right;
-    color: #353535;
-    margin: 26px 0px 32px;
-    
-}
-
-.stat-box h3{
-font-weight: 700;
-font-size: 40px;
-text-align: right;
-color: #353535;
-
-}
-
-.stat-box p{
-font-weight: 500;
-font-size: 14px;
-line-height: 180%;
-color: #353535;
-margin-top: 9px;
-
-    
-}
-
-/* whatDo ends -------------------------------*/
-
-/* Works Experiene starts -------------------------------*/
-
-
-#exp h2{
-    font-weight: 700;
-    font-size: 50px;
-    text-align: right;
-    color: #353535;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.timeline.designation h4{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 180%;
-    color: #353535;
-    
-
-}
-
-.timeline.role h4,
-.timeline.designation p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 180%;
-    color: #7a7a7a;
-    
-    
-}
-
-.timeline p{
-  margin-top: 16px;
-
-}
-
-.timeline .designation{
-    border-right: 2px dashed #7a7a7a;
-    position: relative;
-    padding: 3px 0 117px;
 }
 
 
-
-.timeline .designation::before{
-    content: '';
-    width: 42px;
-    height: 42px;
-    background-color: white;
-    border: 2px dashed #7a7a7a;
-    border-radius: 50%;
-    position: absolute;
-    right: -21px;
-    top: -21px;
+nav {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.timeline .designation::after{
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;   
-    position: absolute;
-    right: -10px;
-    top: -10px;
-}
-
-.timeline.green .designation::after{
-    background-color: #52ab70; 
-}
-.timeline.red .designation::after{
-    background-color: #f17676;
-}
-.timeline.yellow .designation::after{
-    background-color: #ffd233; 
-}
-
-.timeline.role p{
-    font-weight: 400;
-    line-height: 200%;
-    margin-bottom: 100px;
-       
-}
-/* Works Experiene ends -------------------------------*/
-
-/* Exoert section start -------------------------------*/
-
-
-
-#expart_area{
-    padding: 100px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.skills_btn a{
-font-weight: 500;
-font-size: 18px;
-line-height: 180%;
-text-align: center;
-color: #353535;
-background-color: white;
-padding: 16px 64px ;
-margin: 0 72px 60px;
-
-}
-
-
-#Left_part p{
-    margin: 50px 150px 50px 0;
-    
-}
-
-#Left_part a{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 180%;
-    color: #fff;
-    padding: 10px;
-    
-}
-
-
-.edu-text{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 180%;
-    color: #353535;
-    margin-left: 70px;
-
-}
-
-/* progress bar */
-
-
-
-
-.skill-box {
-    margin-bottom: 25px;
-    width: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.skill-title {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.percent {
-    font-weight: bold;
-    
-}
-
-.bar {
-    width: 100%;
-    height: 5px;
-    background: #e5e5e5;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.fill {
-    height: 100%;
-    border-radius: 5px;
-}
-
-/* Individual skill colors + width */
-.figma {
-    width: 85%;
-    background: orange;
-}
-
-.ps {
-    width: 75%;
-    background: #0635c9;
-}
-
-.xd {
-    width: 80%;
-    background: #80005a;
-}
-
-.ai {
-    width: 70%;
-    background: #1a5aff;
-}
-
-/* Expert section ends -------------------------------*/
-
-
-/* my_service starts -------------------------------*/
-
-#my_service{
-    background: #fff7d5;
-    margin: auto;
-}
-
-#my_service h1{
-    font-weight: 700;
-    font-size: 50px;
-    text-align: center;
-    color: #353535;
-    padding-top: 100px;
-}
-
-#my_service p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 180%;
-    text-align: center;
-    color: #7a7a7a;
-    text-align: center;
-    margin: auto;
-    padding: 13px 0 80px;
-    
-}
-
-.serv_card{
-    border: 0.10px solid #353535;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px 0 rgba(76, 74, 74, 0.06);
-    background: #fff;
-    text-align: center;
-    transition: 0.4s;
-    padding:30px 50px 79px;
-    
-    
-}
-
-
-.serv_card:hover{
-  background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
- 
-}
-
-
-
-}
-
-.serv_card a h2{
- font-weight: 600;
-font-size: 24px;
-line-height: 180%;
-text-align: center;
-color: #353535;
-padding: 20px 63px 25px 93px;
-    
-}
-.serv_card p{
-font-weight: 400;
-font-size: 10px;
-line-height: 180%;
-text-align: center;
-color: #7a7a7a;
-display: inline;
-padding: 0px 50px 80px;
-
-    
-}
-
-/* my_service ends -------------------------------*/
-
-
-/* feedback starts -------------------------------*/
-
-#feedback{
-    background: #fbfbfb;
-}
-
-#feedback h1{
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 135%;
-    color: #353535;
-    margin-top: 80px;
-
-}
-
-#feedback p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 180%;
-    color: #7a7a7a;
-    padding: 13px 0 63px;
-    
-
-}
-
-#feedback .row p{
-font-weight: 400;
-font-size: 20px;
-line-height: 200%;
-color: #7a7a7a;
-padding: 120px 0 24px ;
-
-}
-
-#feedback h3{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 200%;
-    color: #353535;
-
-}
-
-#feedback h6{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 200%;
-    text-align: center;
-    color: #7a7a7a;
-    text-align: left;
-    margin-bottom: 150px;
-
-}
-
-/* feedback ends -------------------------------*/
-
-
-/* <!-- blog Post Starts -->*/
-
-
-#blog_post h1{
-font-weight: 700;
-font-size: 50px;
-line-height: 135%;
-text-align: right;
-color: #353535;
-text-align: right;
-margin: 90px 0;
-
-}
-
-.blogInfo {
-    margin-left: 35px;
-}
-
-.blog_group{
-    justify-content: space-between;
-}
-
-.blog_group img{
-    border-radius: 20px;
-    /* max-width: 260px; */
-    border: 1px solid black;
-    margin-bottom: 40px;
-    
-}
-
-.blog_group h6{
-font-weight: 400;
-font-size: 14px;
-line-height: 190%;
-color: #7a7a7a;
-
-    
-}
-
-.blog_group h5{
-font-weight: 500;
-font-size: 14px;
-line-height: 190%;
-color: #353535;
-
-    
-}
-
-.calender_group{
-    display: flex;
-}
-
-.calender_group h6{
-    margin: 0 25px 15px 0;
-}
-
-.blog_group h3{
-    padding-bottom: 60px;
-}
-
-
-.blog_group h3{
-font-weight: 600;
-font-size: 18px;
-line-height: 190%;
-color: #353535;
-
-    
-}
-
-.blog_group h4{
-font-weight: 500;
-font-size: 18px;
-line-height: 190%;
-color: #353535;
-    
-}
-
-/*<!-- Nesletter starts --> */
-
-
-/*<!-- Nesletter ends --> */
-.Subscribe{
-    padding: 80px;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-}
-
-#Subscribe .row{
-    border-radius: 30px;
-    background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
-}
-
-.email-box {
-   display: flex;
-    border: 3px solid #3fa7ff;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #fff;
-    
-    
-    
-}
-
-.email-box input {
-    flex: 1;
-    border: none;
-    padding: 25px 225px 25px 25px;
-    font-size: 14px;
-    outline: none;
-    overflow: hidden;
-}
-
-.email-box button {
-    background: #ff6f6f;
+nav button{
+   width: 30px;
+   height: 30px;
+    background-color: black;
     color: white;
     border: none;
+    border-radius: 0;
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.35); 
+    inset: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.sidebar.show{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+
+.sidebarCtn{
+    max-width: 300px;
+    background-color: white;
+    height: 100%;
     padding: 20px;
-    font-weight: bold;
+    position: relative;
+    transform: translateX(-100%);
+    transition: all 0.35;
+
+}
+
+.sidebar.show .sidebarCtn{
+    transform: translateX(0%);
+}
+
+
+
+.sidebarCtn button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
     cursor: pointer;
-    font-size: 14px;
-    
-}
-
-.email-box button:hover {
-    opacity: 0.8;
-}
-
-
-#Subscribe h3{
-font-weight: 400;
-font-size: 20px;
-line-height: 200%;
-text-align: center;
-color: #353535;
-text-align: left;
-
-}
-
-#Subscribe h1{
-font-weight: 600;
-font-size: 36px;
-line-height: 200%;
-color: #353535;
-
-}
-
-#Subscribe p{
-font-weight: 400;
-font-size: 18px;
-line-height: 200%;
-color: #353535;
-
-}
-/*<!-- blog Post ends --> */
-
-/*<!-- footer starts --> */
-
-
-#footer_last{
-    background: #575757;
-    margin-top: 100px;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
 
 }
 
 
-#footer_last .left_part a img{
-font-weight: 400;
-font-size: 48px;
-color: #fff;
-color: #fbfbfb;
-color: #f8bc17;
-padding: 82px 122px 182px 0;
-
-
-}
-
-#footer_last h6 {
-font-weight: 400;
-font-size: 18px;
-line-height: 180%;
-text-align: justify;
-color: #bbb9b9;}
-
-#footer_last h4{
-font-weight: 500;
-font-size: 20px;
-line-height: 180%;
-color: #fff;
-
-}
-
-.middle_part h1{
-font-weight: 700;
-font-size: 36px;
-line-height: 200%;
-color: #fff;
-padding-top: 81px;
-
-}
-
-.middle_part P{
-font-weight: 400;
-font-size: 16px;
-line-height: 180%;
-text-align: justify;
-color: #bbb9b9;
-padding-bottom: 94px;
-
-    
-}
-.middle_part h6{
-font-weight: 400;
-font-size: 18px;
-line-height: 180%;
-text-align: justify;
-color: #bbb9b9;
-    
-}
-.middle_part h4{
-font-weight: 500;
-font-size: 20px;
-line-height: 180%;
-color: #fff;
-    
-}
-
-
-
-.right_part .social_icon p{
-font-weight: 400;
-font-size: 18px;
-line-height: 180%;
-text-align: justify;
-color: #fff;
-    
-}
-
-.right_part .social_icon a{
-    border-radius: 100%;
-fill: #484848;
-color:white ;
-
-}
-
-.right_part .btn--primary{
-    margin: 125px;
-}
-/*<!-- footer ends --> */
-
-/* -------------------------------------------------------------------------- */
-/* ----------------------resposive---------------------------------------- */
-
-@media (max-width:991px){
-
-    #banner h5 {
-        font-size: 20px;    
-}
-
-#banner h1 {
-    font-size: 40px;
-}
-
-#banner p {
-    font-size: 16px; 
-    margin-bottom: 30px;   
-}
-
-   
-
-
-.socialMediaIcon{
-    margin-top: 50px;
-    display: flex;
-}
-
-
-.socialMediaIcon a{
-    display: flex;
-    margin: 0 30px;
+.cursor{
     width: 40px;
     height: 40px;
-    background: lightgrey;
+    border: 2px solid green;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    line-height: 150%;
-}
+    position: absolute;
+    transform: translate(-50%,-50%); 
+    transition: all 0.1s ease;
+    z-index: 1000;
+    pointer-events: none;
 
-.ele01 {
-    display: none;
-}
-
-.btn-outline {
-
-    border-radius: 10px;
-    margin-top: 10px;
-
-}
-
-#works .row .col-lg-4{
-    margin-bottom: 20px;
-}
-
-#works{
-    margin: 70px 0 0;
-}
-
-.arrow{
-    display: none;
-}
-
-
-.triangle{
-    display: none;
-}
-
-#branndImg{
-    margin-bottom: 20px;
-}
-
-#branding h1 {
-    font-size: 30px;
-}
-
-.timeline .designation p{
-    margin-bottom: 40px;
-}
-
-#my_service h1 {
-    
-    font-size: 40px;
     
 }
 
-#my_service p {
-    font-size: 21px;
-    padding: 13px 0 40px;
 
+.cursorSm{
+    width: 10px;
+    height: 10px;
+    background-color:red;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%); 
+    transition: all 0.1s ease;
+    z-index: 1000;
+    transition: 0.15s;
+    pointer-events: none;
+
+    
 }
 
-.serv_card{
-    margin: 15px auto;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bangladesh-victory-day-16-december-illustration-free-vector.jpg"); /* your image path */
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    
+    
+}
+
+body::before {
+    margin-top: 50px;
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(246, 240, 240, 0.8);
+    z-index: -1;
 }
 
 
 
-}
-/* -------------------------------------------------------------------------- */
+ 
