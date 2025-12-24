@@ -1,24 +1,29 @@
+
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
+  }
+
+a{
+  text-decoration: none;
 }
 
 ul,ol{
-    list-style: none;
+     list-style: none;
 }
 
-a{
-    text-decoration: none;
+
+body{
+    font-family:Arial, Helvetica, sans-serif ;
 }
 
-.container{
-    max-width: 1170px;
+.container {
+    width: 1170px;
+   
     margin: auto;
+    
 }
 
 .row{
@@ -26,160 +31,88 @@ a{
     flex-wrap: wrap;
 }
 
+/*---- common CSS end----*/
 
-nav {
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
-}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-nav button{
-   width: 30px;
-   height: 30px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0;
-}
+  section .row{
+    gap: 12px;
+  }  
 
-.sidebar{
-    position: fixed;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.35); 
-    inset: 0px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-}
-
-.sidebar.show{
-    opacity: 1;
-    visibility: visible;
-
-}
-
-
-
-.sidebarCtn{
-    max-width: 300px;
-    background-color: white;
-    height: 100%;
-    padding: 20px;
-    position: relative;
-    transform: translateX(-100%);
-    transition: all 0.35;
-
-}
-
-.sidebar.show .sidebarCtn{
-    transform: translateX(0%);
-}
-
-
-
-.sidebarCtn button{
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    position: absolute;
+.gallery{
+    width: calc(25% - 12px);
+    height: 400px;
+    overflow: hidden;
     cursor: pointer;
-    right: 5px;
-    top: 5px;
-    padding: 5px;
-
 }
 
 
-.cursor{
-    width: 40px;
-    height: 40px;
-    border: 2px solid green;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%); 
-    transition: all 0.1s ease;
-    z-index: 1000;
-    pointer-events: none;
-
-    
+.gallery img{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 
-.cursorSm{
-    width: 10px;
-    height: 10px;
-    background-color:red;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%); 
-    transition: all 0.1s ease;
-    z-index: 1000;
-    transition: 0.15s;
-    pointer-events: none;
-
-    
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url("../images/bangladesh-victory-day-16-december-illustration-free-vector.jpg"); /* your image path */
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    position: relative;
-    
-    
-}
-
-body::before {
-    margin-top: 50px;
-    content: "";
+.popup{
     position: fixed;
     inset: 0;
-    background: rgba(246, 240, 240, 0.8);
-    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35;
+}
+
+.popup.show{
+    opacity: 1;
+    visibility: visible;
 }
 
 
-
-
-
-@media (max-width:991px) {
-    .sidebar {
-        transform: translateX(-100%);
-    }
-
-    .sidebar.show {
-        transform: translateX(0);
-    }
-
-   .cursor,
-    .cursorSm {
-        display: none;
-    }
-
-
-    nav {
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
+    
+.popup img{
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
 }
 
-/* body {
-        background-size: contain;
-        background-position: left top;
-    } */
+.cancelBtn{
+    position: absolute;
+    top: 30px;
+    right:30px;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
 
-
-  
 }
 
+.leftArrow,
+.rightArrow{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
 
+.leftArrow{
+    left: 50px ;
+}
 
-
-
-
-
-
- 
+.rightArrow{
+    right:50px ;
+}

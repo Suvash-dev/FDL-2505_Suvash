@@ -1,38 +1,56 @@
+let images = document.querySelectorAll('.gallery img')
+let popup = document.querySelector('.popup')
+let popupImage = document.querySelector('.popup img')
+let cancelBtn = document.querySelector('.popup .cancelBtn')
+let rightArrow = document.querySelector('.rightArrow')
+let leftArrow = document.querySelector('.leftArrow')
+
+let selectedImage = 0
 
 
-let navBtn = document.querySelector('nav button')
-let sidebar = document.querySelector('.sidebar')
-let cancelBtn = document.querySelector('.sidebarCtn button')
-
-function openSidebar(){
-    sidebar.classList.add('show');
+function openPopup(event,index){
+     popupImage.src = event.target.src
+      popup.classList.add('show')
+      selectedImg = index
+      console.log(selectedImg)
 }
 
-navBtn.addEventListener('click', openSidebar)
+function closePopup(event){
+     if(event.target.classList.contains('popup') || event.target.classList.contains('closeIcon') || event.target.classList.contains('cancelBtn')) {
 
+           popup.classList.remove('show')
 
-
-function closeSidebar(){
-    sidebar.classList.remove('show')
-}
-
-cancelBtn.addEventListener('click',closeSidebar)
-sidebar.addEventListener('click',closeSidebar)
-
-
-
-let cursor = document.querySelector('.cursor')
-let cursorSm = document.querySelector('.cursorSm')
-
-function moveCursor(event){
-    let top = event.clientY
-    let left =event.clientX
+     }
     
-    cursor.style.top = `${top}px`
-    cursor.style.left = `${left}px`
 
-    cursorSm.style.top = `${top}px`
-    cursorSm.style.left = `${left}px`
 }
 
-window.addEventListener('mousemove', moveCursor)
+ images.forEach((img,index) => {
+     img.addEventListener('click', (event)=>openPopup(event,index))
+ })
+
+ cancelBtn.addEventListener('click', closePopup)
+ popup.addEventListener('click', closePopup)
+
+
+ function nextImage(){
+     selectedImage++
+     if(selectedImage >= images.length){
+          selectedImage = 0
+     }
+     popupImage.src = images[selectedImage].src
+ }
+
+ function prevImage(){
+     selectedImage--
+     if(selectedImage < 0){
+          selectedImage = images.length - 1
+     }
+     popupImage.src = images[selectedImage].src
+
+ }
+
+
+
+ rightArrow.addEventListener('click', nextImage)
+ leftArrow.addEventListener('click', prevImage)
