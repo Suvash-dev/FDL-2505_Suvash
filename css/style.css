@@ -1,118 +1,96 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-  }
-
-a{
-  text-decoration: none;
 }
-
 ul,ol{
-     list-style: none;
+    list-style-type: none;
 }
-
-
-body{
-    font-family:Arial, Helvetica, sans-serif ;
+a{
+    text-decoration: none;
 }
-
-.container {
-    width: 1170px;
-   
+.container{
+    width: 900px;
     margin: auto;
-    
+    position: relative;
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 
-/*---- common CSS end----*/
-
-section{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-  section .row{
-    gap: 12px;
-  }  
-
-.gallery{
-    width: calc(25% - 12px);
-    height: 400px;
-    overflow: hidden;
-    cursor: pointer;
+body{
+    font-family: arial;
 }
 
 
-.gallery img{
+.slide{
+    padding: 0 15px;
+}
+
+.slide img{
     width: 100%;
-    height: 100%;
-    display: block;
+    height: 450px;
+    margin-top: 50px;
+    object-fit: cover;
+    transform: scale(0.8);
+    filter: grayscale(100%);
+    transition: 0.35s;
 }
 
-
-.popup{
-    position: fixed;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.35);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.35;
+.slide.slick-center img{
+    transform: scale(1);
+    filter: grayscale(0);
 }
 
-.popup.show{
-    opacity: 1;
-    visibility: visible;
-}
-
-
-    
-.popup img{
-    width: 100%;
-    max-width: 600px;
-    height: 500px;
-}
-
-.cancelBtn{
-    position: absolute;
-    top: 30px;
-    right:30px;
-    color: white;
-    background-color: transparent;
-    font-size: 25px;
-    border: none;
-
-}
 
 .leftArrow,
 .rightArrow{
     position: absolute;
-    width: 45px;
-    height: 45px;
-    background-color: transparent;
-    color: white;
     top: 50%;
     transform: translateY(-50%);
-    border: none;
-    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    text-align: center;
     cursor: pointer;
+
 }
 
 .leftArrow{
-    left: 50px ;
+ left: -10px;
 }
 
 .rightArrow{
-    right:50px ;
+   right: -10px; 
+}
+
+.my-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.my-dots button{
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    color: transparent;
+    font-size: 50px;
+    transition: 0.35s;
+}
+
+
+.my-dots .slick-active button{
+    width: 25px;
+    border-radius: 25%;
+    background-color: orange;
 }
