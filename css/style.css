@@ -14,6 +14,7 @@ a{
     width: 900px;
     margin: auto;
     position: relative;
+    margin: 70px 20px;
 }
 .row{
     display: flex;
@@ -25,72 +26,155 @@ body{
 }
 
 
-.slide{
-    padding: 0 15px;
-}
-
-.slide img{
-    width: 100%;
-    height: 450px;
-    margin-top: 50px;
-    object-fit: cover;
-    transform: scale(0.8);
-    filter: grayscale(100%);
-    transition: 0.35s;
-}
-
-.slide.slick-center img{
-    transform: scale(1);
-    filter: grayscale(0);
-}
-
-
-.leftArrow,
-.rightArrow{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    line-height: 45px;
-    color: white;
-    background-color: black;
-    border: 2px solid white;
+p{
+    font-size: 20px;
+    font-weight:500;
     text-align: center;
-    cursor: pointer;
+}
+
+.hide button{
+    margin: 20px 0  0 400px;
+}
+
+.animationMagic,
+.customedMagic,
+.slideMagic,
+.boxMagic{
+    text-align: center;
+}
+
+.animationMagic.animationBox,
+.customedMagic.customedBox,
+.slideMagic.slideBox,
+.boxMagic.box{
+    margin-left: 200px;
+}
+
+.slideInOut,
+.slideIn,
+.slideOut,
+.slideHideShow,
+.slideShow,
+.slideHide,
+.hide button,
+.hideShowbtn,
+.hidebtn,
+.showbtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+}
+
+.hideShowbtn{
+    width: 160px;
+}
+
+
+
+.hide button:hover{   
+    border: 2px solid white;
+    background-color: antiquewhite;
+    }
+
+.customedBox,
+.slideBox,
+.box{
+    width: 300px;
+    height: 200px;
+    background:lightblue;
+    margin: 20px 300px;
+    overflow:scroll;
+}
+
+.customedBox{
+    margin-top: 50px;
+    transform:translateX(-205%) ;
+    opacity: 0;
+    transition: 0.35s ease;
+}
+
+.customedBox.active{
+    margin-top: 50px;
+    transform:translateX(0) rotate(90deg);
+    opacity: 1;
+}
+
+.box p{
+    font-size: 15px;
+    text-align: left;
+    
+}
+
+
+
+
+.animationBox{
+    width: 300px;
+    height:300px;
+    background-color: lightgreen;
+    margin-top: 50px;
+    transform:translateX(-105%) ;
+    opacity: 0;
+    transition: 0.35s ease;
+}
+
+.animationBox.active{
+    margin: 50px 0 0 300px;
+    transform:translateX(0) rotate(90deg);
+    opacity: 1;
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 
 }
 
-.leftArrow{
- left: -10px;
-}
+@keyframes rotation {
+    0% {
+        transform:translateX(0) rotate(90deg);
+    }
 
-.rightArrow{
-   right: -10px; 
-}
-
-.my-dots{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 8px;
-}
-
-.my-dots button{
-    width: 8px;
-    height: 8px;
-    border: none;
-    border-radius: 50%;
-    background-color: black;
-    color: transparent;
-    font-size: 50px;
-    transition: 0.35s;
+    30%{
+        border-radius: 100px 100px 100% 100%;
+    }
+   
+    100% {
+         transform:translateX(0) rotate(180deg);
+         border-radius: 100px 100px 100% 100%;
+    }
 }
 
 
-.my-dots .slick-active button{
-    width: 25px;
-    border-radius: 25%;
-    background-color: orange;
+.animationBox2{
+    width: 300px;
+    height: 20px;
+    background-color: rgb(238, 144, 202);
+    transform:translateX(-105%) ;
+    opacity: 1;
+    transition: 0.35s ease;
+}
+
+.animationBox.active1{
+    opacity: 1;
+    margin: 0 0 0 300px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        transform:translateX(0) rotate(90deg);
+    }
+
+    30%{
+        border-radius: 100px 100px 100% 100%;
+    }
+   
+    100% {
+         transform:translateX(0) rotate(0);
+         
+    }
 }
