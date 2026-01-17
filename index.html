@@ -3,105 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jquery clss
-    </title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <title>Echo Bazar</title>
 
-    <div class="container">
-        <h1 style="color: green; text-align: center;"><u>Element Hiding</u></h1> <br>
-        <div class="hide">
-            <p> I am paragraph 1 from html.</p>
-        <p> I am paragraph 2 from html.</p>
-        <p> I am paragraph 3 from html.</p>
-        <p> I am paragraph 4 from html.</p>
-        <p> I am paragraph 5 from html.</p> 
-        <button onclick="reloadPage()">Reload</button> 
-        </div>
-          
-    </div>
-
-    <div class="container">
-        <h1 style="color: green; text-align: center;"><u>Elements Color Change</u></h1> <br>
-        <div class="colorChange">
-            <p> I am paragraph 1 from html.</p>
-        <p> I am paragraph 2 from html.</p>
-        <p> I am paragraph 3 from html.</p>
-        <p> I am paragraph 4 from html.</p>
-        <p> I am paragraph 5 from html.</p> 
-        </div>   
-    </div>
-
-    <div class="container">
-        <div class="boxMagic">
-            <h1 style="margin-bottom: 20px;">Box Hide & Show</h1>
-            <button class="hidebtn"> Hide </button>
-            <button class="showbtn"> Show </button>
-            <button class="hideShowbtn"> Hide & Show </button> <br><br>
-
-            <div class="box">
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aperiam nisi recusandae necessitatibus adipisci atque fugiat id dolorum reprehenderit porro. Fugit ullam eum corrupti voluptatibus provident sed dolorem beatae facilis molestiae odit animi consequatur fugiat quis illo nostrum rem deleniti ipsam voluptates harum, praesentium reiciendis culpa quam minima corporis! Dolorem porro repudiandae nemo, quas sapiente neque tempora laboriosam, animi architecto facere at adipisci reiciendis eaque, blanditiis pariatur quae officiis optio recusandae. Quibusdam, dicta! Quasi, eaque! Error fugiat molestiae dolore sint asperiores cumque voluptas quaerat eligendi, commodi pariatur recusandae, perferendis aliquid harum voluptatibus iure ducimus porro cupiditate temporibus. Quia, quidem accusantium! Praesentium consectetur fugiat adipisci perferendis deserunt aliquam obcaecati quas ratione tempore. Exercitationem beatae ut quasi, natus temporibus id consequatur dolores voluptates laborum qui impedit consectetur repellat nesciunt nihil iste explicabo et commodi sed dolor at! Adipisci odio suscipit voluptate ipsa veniam nobis officia quisquam hic distinctio neque, vitae eos fuga incidunt error cupiditate, laudantium saepe culpa, nesciunt iusto libero harum perspiciatis rerum inventore aperiam? Ab vel odio iure distinctio reiciendis corporis suscipit voluptatem fuga, explicabo veniam iste dolorum eveniet! Sint reprehenderit non doloremque, enim aperiam sit recusandae voluptatem distinctio, laboriosam, adipisci placeat. Saepe reprehenderit inventore sunt quisquam, dolorum itaque laborum?
-                </P>
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <div class="container">
-        <div class="slideMagic">
-           
-            <h1 style="margin-bottom: 20px;">Slide Up & Slide Down</h1>
-
-            <button class="slideHide"> Up </button>
-            <button class="slideShow"> Down </button>
-            <button class="slideHideShow"> Up & Down </button> <br><br>
-
-            <div class="slideBox">
-                
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="customedMagic">
-           
-            <h1 style="margin-bottom: 20px;">Customised Sliding</h1>
-
-            <button class="slideOut"> Out </button>
-            <button class="slideIn"> In </button>
-            <button class="slideInOut"> In & Out </button> <br><br>
-
-            <div class="customedBox">
-                
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="animationMagic">
-           
-            <h1 style="margin-bottom: 20px;">Animation</h1>
-
-            <button class="animationRun"> Run the Animation </button> <br><br>
-            <div class="animationBox">
-                
-            </div> <br>
-            <div class="animationBox2">
-                
-            </div>
-
-        </div>
-    </div>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./assets/css/aos.css">    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="hearderTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-items-center text-center text-lg-start">
+                        <address><iconify-icon icon="fluent:location-24-regular" width="20" height="20"></iconify-icon>Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-flex  justify-content-end align-items-center">
+                        <form>
+                            <select>
+                                <option value="">Eng</option>
+                                <option value="">Bn</option>
+                            </select>
+                            <select>
+                                <option value="">USD</option>
+                                <option value="">BDT</option>
+                            </select>
+                        </form>
+                        <a href="">Sign In / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hearderMdl d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="logo col-lg-3">
+                        <div class="logo"><img src="./assets/images/logo.png" alt=""></div>
+                    </div>
+                    <div class="searchArea col-lg-6">
+                        <form>
+                            <iconify-icon icon="mage:search" width="24" height="24"></iconify-icon>
+                            <input type="search" placeholder="Search">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                    <div class="quickLinks col-lg-3 text-end">
+                        <ul>
+                            <li>
+                                <a href="#"><iconify-icon icon="mynaui:heart"></iconify-icon></a>
+                            </li>
+                             <li>
+                                <a class="cart" href="#">
+                                    <div class="cartCount">
+                                        <iconify-icon icon="iconamoon:shopping-bag-thin"></iconify-icon>
+                                    <div class="count">2</div>
+                                    </div>
+                                    <div class="content">
+                                        <p>Shopping cart:</p>
+                                        <h4>$57.00</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerBtm d-lg-flex d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 ">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>                          
+                    </ul>
+            </div>
+            <div class="col-lg-4 text-end ">
+                <a href="tell:(219) 555-0114" class="phnBtn"><iconify-icon icon="ph:phone-call-bold" width="30" height="30"></iconify-icon>(219) 555-0114</a>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header for Mobile -->
+        <div class="mobileHeader d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col "><button class="mobileMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><iconify-icon icon="ri:menu-4-fill" width="24" height="24"></iconify-icon></button></div>
+                    <div class="col-5"><a href="#"><img src="./assets/images/Logo.png" class="img-fluid" alt=""></a></div>
+                    <div class="col">
+                                <div class="quickLinks col-lg-3 text-end">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="srcInMob"><iconify-icon icon="mynaui:search"></iconify-icon></a>
+                                    </li>
+                                    <li>
+                                        <a class="cart" href="#">
+                                            <div class="cartCount">
+                                                <iconify-icon icon="iconamoon:shopping-bag-thin"></iconify-icon>
+                                            <div class="count">2</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Sidebar -->
+             <div class="offcanvas offcanvas-start mobileSideMenu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown" type="button" >
+                                    <a href="#">Home</a>
+                                </button>
+                                <button class="btn btn-secondary dropdown" type="button" >
+                                    <a href="#">Shop</a>
+                                </button>
+                                <button class="btn btn-secondary dropdown" type="button" >
+                                    <a href="#">Page</a>
+                                </button>
+                                <button class="btn btn-secondary dropdown" type="button" >
+                                    <a href="#">Contact</a>
+                                </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="searchArea mblsrcarea d-none ">
+                        <form>
+                            <iconify-icon icon="mage:search" width="24" height="24"></iconify-icon>
+                            <input type="search" placeholder="Search">
+                            <button>Search</button>
+                        </form>
+                    </div>
+        </div>
+        <div class="menuIcon d-lg-none">
+            <div class="container">
+                    <ul>
+                        <li><a href="#"><iconify-icon icon="mdi:home-outline" ></iconify-icon></a></li>
+                        <li><a href="#"><iconify-icon icon="lineicons:heart" ></iconify-icon></a></li>
+                        <li><a href="#"><iconify-icon icon="mdi:account-outline" ></iconify-icon></a></li>
+                        <li><a href="#"><iconify-icon icon="mdi-light:settings" ></iconify-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+       
+        </header>
+
+
+
+    <!-- all script file attached below -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
