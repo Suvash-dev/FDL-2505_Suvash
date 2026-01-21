@@ -93,12 +93,11 @@ header .hearderTop a{
     border-left: 1px solid var(--gray-scale-gray-–-400);
 }
 
-footer .footerTop,
 header .hearderMdl{
     padding: 24px 0;
 }
 
-footer .searchArea form,
+
 header .searchArea form{
     max-width: 500px;
     display: flex;
