@@ -4,5 +4,55 @@
     border: none;
     
 }
+
+#bannerContent {
+    padding: 10px 10px 17px 10px;
+   
+}
+
+#bannerContent h1 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+#bannerImage img {
+    margin: 15px 5px 10px 5px;
+    
+}
+
+.SliderBase{
+    background-color: #EDF2EE;
+    padding: 0px 0px;
+}
+
+
+
+.my-dots{
+     margin: 10px 0;
+   
+}
+
+
+.service-bar {
+    padding: 20px;
+    position: relative;
+    bottom: 0px;
+    right: 10px;
+    left: 10px;
+}
+
+#serviceIconText{
+    margin: 15px;
+}
+
+.menuIcon {
+    z-index: 99;
+}
+
+#bannerContent{
+    padding-left: 8px;
+}
+
+
     
     }
