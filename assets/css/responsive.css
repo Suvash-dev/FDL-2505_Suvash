@@ -54,5 +54,22 @@
 }
 
 
+#Featured-Products {
+    margin: 10px 0 10px 0px;
+    
+}
+
+#Featured-Products a img {
+    width: 80%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.product-image img {
+    margin: auto;
+    text-align: center;
+}
+
     
     }
