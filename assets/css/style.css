@@ -691,11 +691,12 @@ border: none;
 
 /*feature_products 2nd part-------------------------------------------------------------------------*/
 
-.Featured-Products-2ndPart {
+.Featured-Products-2nd {
   display: flex;
   gap: 0px;
   padding: 30px 0;
   background: #fff;
+  position: relative;
 }
 
 /* PRODUCTS GRID */
@@ -844,5 +845,976 @@ border: none;
   color: #000;
 }
 
+
+
+/*top category 2nd part.................................*/
+
+#Featured-Products-2nd{
+    position: relative;
+
+}
+
+#Featured-Products-2nd .prodCard{
+    margin: 16px 0;
+    position: relative;
+}
+
+
+#Featured-Products-2nd h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+#Featured-Products-2nd .prodImg{
+    overflow: hidden;
+}
+
+#Featured-Products-2nd .prodImg img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#Featured-Products-2nd p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-success-dark);
+    white-space: nowrap;
+}
+
+
+
+#Featured-Products-2nd h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+    }
+
+#Featured-Products-2nd .prod-info{
+    margin: 24px 0 24px 12px;
+}
+
+#Featured-Products-2nd .rating{
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+#Featured-Products-2nd .prodCard{
+    border: 1px solid var(--gray-scale-gray-–-100);
+border-radius: 6px;
+width: 312px;
+height: 116px;
+transition: 0.35s;
+}
+
+#Featured-Products-2nd .prodCard:hover{
+    border: 1px solid var(--branding-success-dark);
+    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+background: var(--gray-scale-white);
+}
+
+#Featured-Products-2nd .promo-card{
+    background-image: url(../images/featureProducts/hotdeai/sumerSale.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #008a05;
+}
+
+#Featured-Products-2nd .promo-card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    padding: 30px 20px;
+    border-radius: 12px;
+
+    /* Background image */
+    background-image: url("../images/featureProducts/hotdeai/sumerSale.png");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    /* fallback color */
+    background-color: #008a05;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* SUMMER SALE text */
+
+
+/* 75% off */
+
+
+#Featured-Products-2nd .promo-card .discount-text {
+   font-family: var(--font-family);
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+text-align: center;
+color: var(--branding-success);
+}
+
+/* Shop Now button */
+
+
+#Featured-Products-2nd .promo-card .shop-btn {
+    
+    background: #fff;
+    color: #0a8f08;
+    padding: 7px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.banner h2, span {
+    color: #00B207;
+    line-height: 100%;
+    
+}
+
+#Featured-Products-2nd .promo-card .shop-btn:hover {
+    background: #0a8f08;
+    color: #fff;
+}
+
+#Featured-Products-2nd .showOnHoover {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    opacity: 0; /* Hidden */
+    visibility: hidden;
+    transition: 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px); /* Slight slide-in effect */
+}
+
+/* Show Icons on Hover */
+#Featured-Products-2nd:hover .showOnHoover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Styling the Icons */
+#Featured-Products-2nd .showOnHoover li {
+    margin-bottom: 8px;
+    
+}
+
+#Featured-Products-2nd .showOnHoover li a {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    transition: 0.3s, color 0.3s;
+}
+
+
+
+/* Icon Hover State */
+#Featured-Products-2nd .showOnHoover li a:hover {
+    background-color: #28a745;
+    color: #fff;
+    
+}
+
+#Featured-Products-2nd .prodCard ul{
+    display: flex;
+    gap: 10px;
+}
+
+#Featured-Products-2nd .prodCard ul li{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.35s;
+}
+
+#Featured-Products-2nd .prodCard:hover ul li  {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Featured-Products-2nd .prodCard ul li:nth-child(1) {
+    transition-delay: 0.25s;
+}
+#Featured-Products-2nd .prodCard ul li:nth-child(2) {
+    transition-delay: 0.35s;
+}
+#Featured-Products-2nd .prodCard ul li:nth-child(3) {
+    transition-delay: 0.45s;
+}
+
+
+/* TopCategory start ........................................................................................................*/
+
+
+#topCategory{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sliderNother {
+    padding: 30px 0;
+    position: relative;
+
+}
+
+.sliderNother .leftArrow,
+.sliderNother .rightArrow{
+    position: absolute;
+}
+
+.sliderNother .rightArrow{
+    right: -40px;
+    top: 50%;
+    color: #000;
+    font-size: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+    
+}
+
+.sliderNother .leftArrow {
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+   
+    
+}
+
+.sliderNother .rightArrow a,
+.sliderNother .leftArrow a {
+    color: #000;
+    font-size: 20px;
+    
+}
+
+
+
+.sliderNother .sliderChild {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.sliderNother .sliderChild:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    border: 1px solid var(--branding-success);
+}
+
+.sliderImg {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+}
+
+.sliderImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sliderinfo h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.sliderinfo p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Slick arrows customization */
+.slick-prev,
+.slick-next {
+    background: #0a8f08;
+    border-radius: 50%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: #066b06;
+    
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Promo Offer Start .......................................................................*/
+
+
+#promoOffer{
+ margin-bottom: 100px;
+}
+
+#promoOffer .regularProducts{
+ padding-top: 50px;
+}
+
+
+.blue{
+    background-image: url(../images/PromoOffer/blue.png);
+}
+
+.black{
+    background-image: url(../images/PromoOffer/blk.png);
+}
+
+.yellow{
+    background-image: url(../images/PromoOffer/yellow.png);
+}
+
+/* General Setup */
+
+
+#promoOffer .row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Base Card Styling */
+.promo-card {
+    width: 380px;
+    height: 480px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+.tag {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+
+.timer {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.timer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.timer small {
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+
+.badge {
+    
+    color: #1a1a1a;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.promo-card p { font-size: 18px; }
+.promo-card p strong { color: #ff9900; font-size: 22px; }
+
+/* Buttons */
+.btn {
+    margin-top: 20px;
+    background: white;
+    color: #00b307; /* Green text from your image */
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition:  0.35s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Newest Products start.........................................................................*/
+
+#newestProduct{
+    margin-bottom: 100px;
+}
+
+
+#newestProduct h1{
+    margin-bottom: 16px ;
+}
+
+#newestProduct img{
+    margin-bottom: 50px ;
+}
+
+
+/* Client Testimonial start.........................................................................*/
+
+.testimonial-section{
+    background: var(--gren-gray-scale-50);
+    padding: 100px 0;
+}
+
+/* Header & Arrows */
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: #e6e6e6;
+    margin-top: 5px;
+    position: relative;
+}
+
+.underline span {
+    display: block;
+    width: 30px;
+    height: 100%;
+    background: var(--primary-green);
+}
+
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    background: var(--branding-success);
+    color: white;
+    border-color: var(--branding-success);
+}
+
+
+.arrow-btn.active {
+    background: var(--branding-success);
+    color: white;
+    border-color: var(--branding-success);
+}
+
+/* Grid & Cards */
+.testimonial-grid {
+    display: flex;
+    /* gap: 25px; */
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    flex: 1;
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #94e197;
+    font-family: serif;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    color: var(--text-gray);
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Card Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-info span {
+    color: #999;
+    font-size: 13px;
+}
+
+.stars {
+    color: #ff8a00;
+    letter-spacing: 2px;
+}
+
+/* Pagination Dots */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: var(--primary-green);
+    width: 12px;
+    border-radius: 4px;
+}
+
+/*Instagram Link started.......................................................................................*/
+#InstagramLinks {
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#InstagramLinks .insta-title {    
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+    padding: 60px 0 32px;
+}
+
+#InstagramLinks .insta-title span {
+    color: var(--gray-scale-gray-–-900)
+}
+
+/* Gallery */
+.insta-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.insta-item {
+    position: relative;    
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* Overlay */
+.insta-item.overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 128, 0, 0.65);
+}
+
+.insta-item .icon {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+}
+
+/* Hover effect */
+.insta-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Footer Top started ...................................................................................................................*/
+
+
+.footerTop {
+    background: #f7f7f7;
+    padding: 25px 0;
+}
+
+.footerTop-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    
+}
+
+.footer-logo span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* Newsletter text */
+
+.footer-subscribe{
+    margin-right: 300px;
+}
+
+
+.footer-newsletter-text h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+}
+
+.footer-newsletter-text p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Subscribe form */
+.footer-subscribe {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.footer-subscribe input {
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    width: 240px;
+    font-size: 14px;
+}
+
+.footer-subscribe button {
+    border: none;
+    background: #00a000;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+    background: #008000;
+}
+
+
+/* footer middle start---------------------------------------------------------------------------------------------------*/
+
+.footerMiddle {
+  background-color: #1a1a1a; /* Dark background */
+  color: #999999; /* Light gray text */
+  padding: 60px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footerMiddle .container {
+ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-col {
+  flex: 1;
+  
+  margin-bottom: 30px;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #999999;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.35s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--gray-scale-white)
+}
+
+/* Contact Info Styling */
+.app-buttons .contact-info {
+  border: none;
+  
+}
+
+
+.contact-info .phone, .contact-info .email {
+    border-bottom: 2px solid #00b307; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+
+}
+
+.contact-info .phone:hover, .contact-info .email:hover {
+    box-shadow: 0 2px 0 0 #20b526;
+    background: var(--gray-scale-gray-–-900);
+}
+
+
+
+.contact-info .or {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+}
+
+/* App Buttons */
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  background: var(--gray-scale-gray-–-800);
+}
+
+.btn-app img {
+  height: 40px;
+  width: auto;
+  display: block;
+  
+  
+}
+
+/* footer bottom start-------------------------------------------------------------------------------------------------*/
+
+.footerBtm {
+    background-color: #1a1a1a; /* Dark background from snapshot */
+    padding: 24px 0;
+    border-top: 1px solid #333; /* The thin line above the content */
+    color: #808080; /* Muted gray text color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.footerBtm:hover {
+    box-shadow: 0 -1px 0 0 var(--gray-scale-gray-–-800);
+background: var(--gray-scale-gray-–-900);
+}
+
+
+.footerBtm .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Social Icons Styling */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Base style for all icons */
+.footer-socials .social-icon {
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect — ONLY hovered icon */
+.footer-socials .social-icon:hover {
+  background-color: #22c55e; /* greenish */
+}
+
+/* Facebook active (default selected) */
+.footer-socials .social-icon.facebook {
+  background-color: #00b207;
+}
+
+/* Optional: click feedback */
+.footer-socials .social-icon:active {
+  transform: scale(0.92);
+}
+
+/* Payment Icons Styling */
+.footer-payments {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+.footer-payments img {
+    height: 32px; /* Uniform height for payment logos */
+    border-radius: 4px;
+    border: 1px solid #333; /* Matches the outlined look in the snap */
+    transition: 0.25s;
+}
+
+.footer-payments img:hover {
+    border: 2px solid #646363;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .footerBtm .container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+
+/* Responsive -------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .insta-gallery {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerTop-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+    }
+
+    .footer-subscribe input {
+        width: 100%;
+    }
+}
+
+
+/* Responsive */
 
 
