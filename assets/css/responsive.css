@@ -59,11 +59,18 @@
     
 }
 
+
+.product-card{
+    margin: auto;
+}
+
+
 #Featured-Products a img {
     width: 80%;
     height: 100%;
     margin: 5px;
     padding: 5px;
+    
 }
 
 .product-image img {
@@ -71,16 +78,62 @@
     text-align: center;
 }
 
+#Featured-Products-2nd .prodCard{
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#Featured-Products-2nd h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+#Featured-Products-2nd .prod-info {
+    margin: 0;
+
+}
+
+.promo-card{
+    margin: 70px auto;
+    
+}
+
+
+
+#newestProduct h1{
+    text-align: center;
+    
+}
+
+#newestProduct a img{
+    display: block;  
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50px;
+}
+
+#newestProduct .product-card{
+    margin-bottom: 20px;
+} 
+
+.testimonial-section {
+    
+    padding: 50px 0;
+}
+
+.promo-card {
+    margin: 5px ;
+}
+
+}
 /*Featured-Products-2nd start*/ 
 /*not done yet*/
 
 /*Featured-Products-2nd end*/ 
 
     
-    #promoOffer .row {
-        flex-direction: column;
-    }
-
-    }
+   
+   
 
 
