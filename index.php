@@ -1,68 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php 
+include "layouts/header.php"
+
+?>
 
 
-<div class="container">
+<!-- //http://localhost/phpTodo/ -->
 
-<!-- even / odd number check------------------------------------------------ -->
+<div class="col-lg-5 mx-auto ">
+    <div class="card my-50px">
+        <div class="card-header">Add New Todo</div>
+        <div class="card-body">
+            <form action="./controller/store_todo.php" method="POST">
+                <div class="mb-3">
+                    <label for="todoInput" class="form-label">Todo Title</label>
+                    <input type="text" class="form-control" id="todoInput" name="title" placeholder="Enter your todo item">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Todo Description</label>
+                    <input type="text" class="form-control" id="description" name="description" placeholder="Enter your todo description">
+                </div>
 
-        <form action="./multiNumber.php" method= "POST">
-
-            <!-- <input type="text" name="getNumber"> <br> -->
-            
-
-            <input type="text" name="getTable"> 
-            <button>click Odd/Even?</button>
-
-        </form>
-
-        <br>  <br>
-
-<!-- Generating multiplication table  ------------------------------------------------ -->
-
-
-        <form action="./multiPlicationTable.php" method= "POST">
-
-            <input type="text" name="multiPlicationTable"> 
-            <button>click to get Multiplication</button>
-
-        </form>
-            <br>  <br>
-<!-- Generating multiplication table  ------------------------------------------------ -->
-
-        <form action="./multiTable.php" method= "POST">
-
-            <input type="text" name="multiTable"> 
-            <button>click to get MultiTable</button>
-
-        </form>
-
-              <br>  <br>
-        <!-- Youtube Thumbnail -->
-
-        <form action="./thumb_genearte.php" method= "POST">
-
-            <input type="text" name="youtube_url"> 
-            <button>Generate Thumbnail</button>
-
-        </form>
-
-
-
+                <div class="mb-3">
+                    <label for="deadline" class="form-label">Deadline</label>
+                    <input type="date" class="form-control" id="deadline" name="deadline">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
 </div>
 
-<!-- http://localhost/php%20claas-3%20assingnment/ -->
- <!-- youtube thumbnail api stackoverflow -->
- <!-- youtube thumbnail generator -->
 
+<?php 
+include "layouts/footer.php"
 
-</body>
-</html>
+?>
